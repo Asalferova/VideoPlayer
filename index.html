@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a7ddde55e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Video Player</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>MyVideo</h1>
+    </header>
+    <div class="video-player">
+        <div class="video-player__box">
+            <div class="video-player__content">
+                <div class="video-player__container">
+                    <video src="./video/9.mp4" class="video-player__main">
+                    </video>
+                    <div class="video-player__controls">
+                        <i class="fa-solid fa-play video-player__play" title="приостановить"></i>
+                        <input class="video-player__range" type="range" name="range" value="0">
+                        <span class="fa-solid fa"></span>
+                        <i class="fa-solid fa-volume-low video-player__volume"></i>
+                        <input class="video-player__volume-range" type="range" name="range" min="0" max="1" step="0.01">
+                        <i class="fa-solid fa-forward-step video-player__next" title="следующее видео"></i>
+                        <i class="fa-solid fa-forward-fast video-player__speed" title="увеличить скорость"></i>
+                        <i class="fa-solid fa-expand video-player__expand" title="увеличить экран"></i>
+
+                    </div>
+                </div>
+                <i class="fa-solid fa-thumbs-up like-btn"></i>
+                <h1 class="video-player__title">Природные симфонии: Вдохновляющие пейзажи и звуки дикой природы</h1>
+                <p class="video-player__desc">Погружение в удивительный мир дикой природы, где величественные горы
+                    встречаются с бескрайними лесами, создавая потрясающие пейзажи и уникальные моменты спокойствия.</p>
+                <div class="comments">
+                    <h2>Комментарии</h2>
+
+                    <form id="commentForm">
+                        <textarea class="comment-input" placeholder="Оставьте свой комментарий здесь"></textarea>
+                        <button type="submit" class="comment-btn">Добавить комментарий</button>
+                    </form>
+                    <div class="comment-list">
+                        <div class="comment">
+                            <p>Прекрасное видео! Очень понравилось.</p>
+                        </div>
+                        <div class="comment">
+                            <p>Спасибо за возможность насладиться такой красотой.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-player__list">
+                <template id="video_template">
+                    <video class="video-player__el" src="">
+                    </video>
+                    <h3 class="video-player__el-title"></h3>
+                </template>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
