@@ -123,6 +123,9 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .video-player__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   max-width: 20%;
   padding: 10px;
 }
@@ -136,7 +139,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .video-player__el-title {
-  font-size: 1em;
+  font-size: 95%;
   color: var(--el-title-color);
   text-align: start;
   margin-bottom: 5px;
