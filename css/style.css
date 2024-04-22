@@ -53,6 +53,8 @@ body {
 
 .video-player__main {
   width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .video-player__controls {
