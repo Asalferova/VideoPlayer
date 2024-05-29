@@ -124,6 +124,9 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .video-player__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   max-width: 20%;
   padding: 10px;
 }
@@ -137,7 +140,11 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .video-player__el-title {
+<<<<<<< HEAD
   font-size: 1rem;
+=======
+  font-size: 95%;
+>>>>>>> 9193a427fae645a822f4da912e10a49528dbaaeb
   color: var(--el-title-color);
   text-align: start;
   margin-bottom: 5px;
