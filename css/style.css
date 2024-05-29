@@ -49,10 +49,13 @@ body {
   position: relative;
   max-width: 95%;
   margin: 20px;
+ 
 }
 
 .video-player__main {
   width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .video-player__controls {
@@ -134,7 +137,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .video-player__el-title {
-  font-size: 1em;
+  font-size: 1rem;
   color: var(--el-title-color);
   text-align: start;
   margin-bottom: 5px;
@@ -220,3 +223,5 @@ input[type="range"]::-webkit-slider-thumb {
     max-width: 100%;
   }
 }
+
+
